@@ -1,0 +1,14 @@
+%start S
+
+S[SEM=<EstVivant(?vp)>] -> VP[SEM=?vp]
+VP[SEM=?n] -> N[SEM=?n] V AD
+N[SEM=?np] -> Nprop[SEM=?np]
+V -> 'est'
+AD -> 'vivant' | 'vivante'
+
+Nprop[SEM=<Ben>] -> 'Ben'
+Nprop[SEM=<Alec>] -> 'Alec'
+Nprop[SEM=<Gab>] -> 'Gab'
+Nprop[SEM=<Pei>] -> 'Pei'
+Nprop[SEM=<Sylvie>] -> 'Sylvie'
+Nprop[SEM=<Eric>] -> 'Eric'

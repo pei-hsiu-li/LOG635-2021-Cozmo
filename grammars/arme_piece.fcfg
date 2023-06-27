@@ -1,0 +1,25 @@
+%start S
+
+S[SEM=<Arme_Piece(?vp,?pp)>] -> VP[SEM=?vp] PP[SEM = ?pp]
+VP[SEM=?n] -> Det N[SEM=?n] Pron Vt | Det N[SEM=?n] V
+N[SEM=?np] -> Narme[SEM=?np]
+Pron -> 'se'
+Vt -> 'trouve' 
+V -> 'est'
+PP[SEM=?p] -> Prep Det Npiece[SEM = ?p]
+Prep -> 'dans'
+Det -> 'le' | 'la' | 'Le' | 'La' | 'Les' | 'les'
+
+Npiece[SEM=<Cuisine>] -> 'cuisine'
+Npiece[SEM=<Salon>] -> 'salon'
+Npiece[SEM=<Salle_a_manger>] -> 'salle_a_manger'
+Npiece[SEM=<Garage>] -> 'garage'
+Npiece[SEM=<Salle_de_bain>] -> 'salle_de_bain'
+Npiece[SEM=<Chambre>] -> 'chambre'
+
+Narme[SEM=<Fusil>] -> 'fusil'
+Narme[SEM=<Corde>] -> 'corde'
+Narme[SEM=<Couteau>] -> 'couteau'
+Narme[SEM=<Poison>] -> 'poison'
+Narme[SEM=<Hache>] -> 'hache'
+Narme[SEM=<Baton>] -> 'baton'

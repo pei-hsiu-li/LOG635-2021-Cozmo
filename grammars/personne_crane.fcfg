@@ -1,0 +1,18 @@
+%start S
+
+S[SEM=<CraneOuvert(?vp)>] -> VP[SEM=?vp]
+VP[SEM=?n] -> N[SEM=?n] V Det Nmarque P Det Ntete
+N[SEM=?np] -> Nprop[SEM=?np]
+V -> 'a'
+Det -> 'des' | 'une' | 'la'
+P -> 'au' | 'à'
+AD -> 'mort' | 'morte'
+Nmarque -> 'marques' | 'marque'
+Ntete -> 'tete'
+
+Nprop[SEM=<Ben>] -> 'Ben'
+Nprop[SEM=<Alec>] -> 'Alec'
+Nprop[SEM=<Gab>] -> 'Gab'
+Nprop[SEM=<Pei>] -> 'Pei'
+Nprop[SEM=<Sylvie>] -> 'Sylvie'
+Nprop[SEM=<Eric>] -> 'Eric'

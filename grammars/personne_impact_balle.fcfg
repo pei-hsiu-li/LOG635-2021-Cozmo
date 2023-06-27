@@ -1,0 +1,18 @@
+%start S
+
+S[SEM=<ImpactBalle(?vp)>] -> VP[SEM=?vp]
+VP[SEM=?n] -> N[SEM=?n] V Det Nballe P Ncorps
+N[SEM=?np] -> Nprop[SEM=?np]
+V -> 'a'
+Det -> 'des' | 'une'
+P -> 'au'
+AD -> 'mort' | 'morte'
+Nballe -> 'balles' | 'balle'
+Ncorps -> 'corps'
+
+Nprop[SEM=<Ben>] -> 'Ben'
+Nprop[SEM=<Alec>] -> 'Alec'
+Nprop[SEM=<Gab>] -> 'Gab'
+Nprop[SEM=<Pei>] -> 'Pei'
+Nprop[SEM=<Sylvie>] -> 'Sylvie'
+Nprop[SEM=<Eric>] -> 'Eric'

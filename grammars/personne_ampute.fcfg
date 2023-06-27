@@ -1,0 +1,17 @@
+%start S
+
+S[SEM=<Ampute(?vp)>] -> VP[SEM=?vp]
+VP[SEM=?n] -> N[SEM=?n] V Det Nmembre Nmanquant
+N[SEM=?np] -> Nprop[SEM=?np]
+V -> 'a'
+Det -> 'des' | 'un'
+AD -> 'mort' | 'morte'
+Nmembre -> 'membres' | 'membre'
+Nmanquant -> 'manquant' | 'manquants'
+
+Nprop[SEM=<Ben>] -> 'Ben'
+Nprop[SEM=<Alec>] -> 'Alec'
+Nprop[SEM=<Gab>] -> 'Gab'
+Nprop[SEM=<Pei>] -> 'Pei'
+Nprop[SEM=<Sylvie>] -> 'Sylvie'
+Nprop[SEM=<Eric>] -> 'Eric'

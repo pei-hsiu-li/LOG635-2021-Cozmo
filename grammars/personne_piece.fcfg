@@ -1,0 +1,26 @@
+%start S
+
+S[SEM=<Personne_Piece(?vp,?pp)>] -> VP[SEM=?vp] PP[SEM = ?pp]
+VP[SEM=?n] -> N[SEM=?n] Pron Vt | N[SEM=?n] V
+N[SEM=?np] -> Nprop[SEM=?np]
+N[SEM = ?vp] -> Npiece[SEM=?vp]
+Pron -> 'se'
+Vt -> 'trouve' 
+V -> 'est'
+PP[SEM=?vp] -> Prep Det N[SEM = ?vp]
+Prep -> 'dans'
+Det -> 'le' | 'la'
+
+Npiece[SEM=<Cuisine>] -> 'cuisine'
+Npiece[SEM=<Salon>] -> 'salon'
+Npiece[SEM=<Salle_a_manger>] -> 'salle_a_manger'
+Npiece[SEM=<Garage>] -> 'garage'
+Npiece[SEM=<Salle_de_bain>] -> 'salle_de_bain'
+Npiece[SEM=<Chambre>] -> 'chambre'
+
+Nprop[SEM=<Ben>] -> 'Ben'
+Nprop[SEM=<Alec>] -> 'Alec'
+Nprop[SEM=<Gab>] -> 'Gab'
+Nprop[SEM=<Pei>] -> 'Pei'
+Nprop[SEM=<Sylvie>] -> 'Sylvie'
+Nprop[SEM=<Eric>] -> 'Eric'
